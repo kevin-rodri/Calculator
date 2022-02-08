@@ -22,7 +22,12 @@ public class Calculator {
 		} else if(input == 3) {
 			System.out.print((operandUno * operandDos));
 		} else if (input == 4) {
-			System.out.print((operandUno / operandDos));
+			if (operandDos == 0) {
+				System.out.println("Error: Divide by Zero");
+			} else {
+				System.out.print((operandUno / operandDos));
+			}	
+	
 		} else {
 			System.out.println("invalid input");
 			}
@@ -40,7 +45,11 @@ public class Calculator {
 			} else if(input == 3) {
 				System.out.print((operandOne * operandTwo));
 			} else if (input == 4) {
-				System.out.print((operandOne / operandTwo));
+				if (operandTwo == 0) {
+					System.out.println("Error: Divide by Zero");
+				} else {
+					System.out.print((operandOne / operandTwo));
+				}	
 			} else {
 				System.out.println("invalid input");
 				}
